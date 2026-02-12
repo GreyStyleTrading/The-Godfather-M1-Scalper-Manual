@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>◆ THE GODFATHER M1 SCALPER ◆</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Audiowide&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* CHROME & METALLIC */
+            --chrome-1: #ffffff;
+            --chrome-2: #e8e8e8;
+            --chrome-3: #c0c0c0;
+            --chrome-4: #808080;
+            --chrome-5: #404040;
+            --chrome-6: #1a1a1a;
+
+            /* Y2K NEON */
+            --neon-cyan: #00ffff;
+            --neon-blue: #0080ff;
+            --neon-pink: #ff00ff;
+            --neon-purple: #8000ff;
+            --neon-lime: #80ff00;
+            --neon-orange: #ff8000;
+
+            /* MATRIX */
+            --matrix: #00ff41;
+            --matrix-dim: #008f11;
+
+            /* DEEP SPACE */
+            --space-black: #050508;
+            --space-dark: #0a0a12;
+            --space-navy: #0d0d1a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background: var(--space-black);
+            color: var(--chrome-2);
+            min-height: 100vh;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* MATRIX RAIN BACKGROUND */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:
+                linear-gradient(180deg,
+                    rgba(0, 255, 65, 0.03) 0%,
+                    transparent 50%,
+                    rgba(0, 255, 65, 0.02) 100%),
+                repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 2px,
+                    rgba(0, 255, 65, 0.03) 2px,
+                    rgba(0, 255, 65, 0.03) 4px
+                );
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* CRT SCANLINES */
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.4) 1px,
+                transparent 1px,
+                transparent 3px
+            );
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* HEADER - CHROME 3D */
+        .header {
+            text-align: center;
+            padding: 80px 30px 50px;
+            margin-bottom: 50px;
+            position: relative;
+            background:
+                linear-gradient(135deg,
+                    rgba(0, 255, 255, 0.1) 0%,
+                    rgba(255, 0, 255, 0.05) 50%,
+                    rgba(0, 255, 255, 0.1) 100%),
+                radial-gradient(ellipse at center, rgba(192, 192, 192, 0.1) 0%, transparent 70%);
+            border: 2px solid transparent;
+            border-image: linear-gradient(
+                135deg,
+                var(--neon-cyan),
+                var(--neon-pink),
+                var(--neon-cyan)
+            ) 1;
+            box-shadow:
+                0 0 60px rgba(0, 255, 255, 0.2),
+                inset 0 0 80px rgba(0, 255, 255, 0.05);
+        }
+
+        /* Holographic sheen overlay */
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(
+                135deg,
+                rgba(255, 255, 255, 0.1) 0%,
+                transparent 30%,
+                rgba(255, 0, 255, 0.05) 50%,
+                transparent 70%,
+                rgba(0, 255, 255, 0.1) 100%
+            );
+            pointer-events: none;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* CHROME 3D TITLE */
+        h1 {
+            font-family: 'Audiowide', 'Orbitron', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            margin-bottom: 20px;
+            /* Chrome gradient */
+            background: linear-gradient(
+                180deg,
+                #ffffff 0%,
+                #e0e0e0 15%,
+                #c0c0c0 30%,
+                #808080 45%,
+                #c0c0c0 60%,
+                #e0e0e0 75%,
+                #ffffff 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            /* 3D effect */
+            text-shadow:
+                0 1px 0 rgba(255,255,255,0.4),
+                0 2px 0 rgba(192,192,192,0.3),
+                0 3px 0 rgba(128,128,128,0.2),
+                0 4px 0 rgba(64,64,64,0.1),
+                0 0 30px rgba(0, 255, 255, 0.5),
+                0 0 60px rgba(0, 255, 255, 0.3),
+                0 0 90px rgba(0, 255, 255, 0.1);
+            filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.4));
+        }
+
+        .subtitle {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.1rem;
+            color: var(--neon-cyan);
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            text-shadow:
+                0 0 10px var(--neon-cyan),
+                0 0 20px var(--neon-cyan),
+                0 0 40px rgba(0, 255, 255, 0.5);
+            margin-bottom: 15px;
+        }
+
+        .version-badge {
+            display: inline-block;
+            background: linear-gradient(135deg,
+                rgba(255, 0, 255, 0.2),
+                rgba(0, 255, 255, 0.2));
+            color: var(--chrome-1);
+            padding: 10px 30px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.9rem;
+            letter-spacing: 4px;
+            border: 1px solid var(--neon-cyan);
+            box-shadow:
+                0 0 20px rgba(0, 255, 255, 0.3),
+                inset 0 0 20px rgba(0, 255, 255, 0.1);
+            text-shadow: 0 0 10px var(--neon-cyan);
+        }
+
+        /* SECTIONS - GLOSSY PANELS */
+        .section {
+            background: linear-gradient(135deg,
+                rgba(10, 10, 18, 0.95) 0%,
+                rgba(20, 20, 35, 0.9) 50%,
+                rgba(10, 10, 18, 0.95) 100%
+            );
+            border: 1px solid var(--chrome-5);
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+            box-shadow:
+                0 0 40px rgba(0, 0, 0, 0.8),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+
+        /* Top holographic line */
+        .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg,
+                transparent,
+                var(--neon-cyan),
+                var(--neon-pink),
+                var(--neon-cyan),
+                transparent
+            );
+            box-shadow: 0 0 20px var(--neon-cyan);
+        }
+
+        /* Glossy sheen */
+        .section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            background: linear-gradient(180deg,
+                rgba(255, 255, 255, 0.05) 0%,
+                transparent 100%
+            );
+            pointer-events: none;
+        }
+
+        .section-header {
+            background: linear-gradient(90deg,
+                rgba(0, 255, 255, 0.1) 0%,
+                rgba(255, 0, 255, 0.05) 50%,
+                rgba(0, 255, 255, 0.1) 100%
+            );
+            padding: 25px 30px;
+            border-bottom: 1px solid var(--chrome-5);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            position: relative;
+        }
+
+        .section-icon {
+            font-size: 1.8rem;
+            filter: drop-shadow(0 0 10px var(--neon-cyan));
+        }
+
+        h2 {
+            font-family: 'Audiowide', 'Orbitron', sans-serif;
+            font-size: 1.4rem;
+            color: var(--chrome-1);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow:
+                0 0 20px rgba(255, 255, 255, 0.3),
+                0 0 40px rgba(0, 255, 255, 0.2);
+        }
+
+        .section-content {
+            padding: 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* SETTING CARDS - GLOSSY */
+        .setting-card {
+            background: linear-gradient(135deg,
+                rgba(192, 192, 192, 0.05) 0%,
+                rgba(128, 128, 128, 0.02) 100%
+            );
+            border-left: 3px solid var(--neon-cyan);
+            padding: 25px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+            box-shadow:
+                inset 0 1px 0 rgba(255, 255, 255, 0.05),
+                0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .setting-card:hover {
+            transform: translateX(8px);
+            border-left-width: 6px;
+            background: linear-gradient(135deg,
+                rgba(0, 255, 255, 0.08) 0%,
+                rgba(255, 0, 255, 0.04) 100%
+            );
+            box-shadow:
+                -5px 0 30px rgba(0, 255, 255, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+
+        .setting-card.important {
+            border-left-color: var(--neon-pink);
+            background: linear-gradient(135deg,
+                rgba(255, 0, 255, 0.06) 0%,
+                rgba(0, 255, 255, 0.03) 100%
+            );
+        }
+
+        .setting-card.warning {
+            border-left-color: var(--neon-orange);
+        }
+
+        h3 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--chrome-1);
+            font-size: 1.15rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        .setting-type {
+            display: inline-block;
+            background: rgba(0, 255, 255, 0.15);
+            color: var(--neon-cyan);
+            padding: 4px 12px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border: 1px solid var(--neon-cyan);
+            box-shadow:
+                0 0 10px rgba(0, 255, 255, 0.2),
+                inset 0 0 10px rgba(0, 255, 255, 0.1);
+            text-shadow: 0 0 5px var(--neon-cyan);
+        }
+
+        .default-value {
+            display: inline-block;
+            background: rgba(255, 0, 255, 0.1);
+            color: var(--neon-pink);
+            padding: 4px 12px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            border: 1px solid var(--neon-pink);
+            box-shadow:
+                0 0 10px rgba(255, 0, 255, 0.2),
+                inset 0 0 10px rgba(255, 0, 255, 0.05);
+            text-shadow: 0 0 5px var(--neon-pink);
+        }
+
+        p {
+            line-height: 1.7;
+            color: var(--chrome-3);
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+
+        /* EXAMPLE BOX - GLOSSY */
+        .example {
+            background: linear-gradient(135deg,
+                rgba(0, 0, 0, 0.4) 0%,
+                rgba(20, 20, 30, 0.3) 100%
+            );
+            padding: 18px;
+            border: 1px dashed var(--chrome-4);
+            border-left: 3px solid var(--neon-cyan);
+            margin-top: 15px;
+            position: relative;
+            box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .example-label {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--neon-cyan);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px var(--neon-cyan);
+        }
+
+        /* PRO TIP - LIME GLOW */
+        .pro-tip {
+            background: linear-gradient(135deg,
+                rgba(128, 255, 0, 0.08) 0%,
+                rgba(0, 255, 65, 0.05) 100%
+            );
+            border: 1px solid var(--neon-lime);
+            padding: 18px;
+            margin-top: 15px;
+            box-shadow:
+                0 0 20px rgba(128, 255, 0, 0.1),
+                inset 0 0 20px rgba(128, 255, 0, 0.05);
+        }
+
+        .pro-tip::before {
+            content: "► ";
+            color: var(--neon-lime);
+            font-weight: 700;
+            text-shadow: 0 0 10px var(--neon-lime);
+        }
+
+        /* WARNING BOX - HOT */
+        .warning-box {
+            background: linear-gradient(135deg,
+                rgba(255, 0, 128, 0.1) 0%,
+                rgba(255, 80, 0, 0.08) 100%
+            );
+            border: 1px solid var(--neon-orange);
+            padding: 20px;
+            margin-top: 15px;
+            box-shadow:
+                0 0 25px rgba(255, 128, 0, 0.15),
+                inset 0 0 25px rgba(255, 80, 0, 0.05);
+        }
+
+        .warning-box::before {
+            content: "⚠ ";
+            color: var(--neon-orange);
+            font-weight: 700;
+            text-shadow: 0 0 10px var(--neon-orange);
+        }
+
+        /* QUICK START - HOLOGRAPHIC */
+        .quick-start {
+            background: linear-gradient(135deg,
+                rgba(0, 255, 255, 0.08) 0%,
+                rgba(255, 0, 255, 0.05) 50%,
+                rgba(0, 255, 255, 0.08) 100%
+            );
+            border: 2px solid transparent;
+            border-image: linear-gradient(135deg,
+                var(--neon-cyan),
+                var(--neon-pink),
+                var(--neon-cyan)
+            ) 1;
+            padding: 40px;
+            margin-bottom: 50px;
+            box-shadow:
+                0 0 60px rgba(0, 255, 255, 0.15),
+                inset 0 0 80px rgba(0, 255, 255, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Holographic shimmer */
+        .quick-start::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                45deg,
+                transparent 30%,
+                rgba(255, 255, 255, 0.03) 50%,
+                transparent 70%
+            );
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { transform: translateX(-100%) rotate(45deg); }
+            50% { transform: translateX(100%) rotate(45deg); }
+        }
+
+        .quick-start h2 {
+            color: var(--chrome-1);
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow:
+                0 0 30px var(--neon-cyan),
+                0 0 60px rgba(0, 255, 255, 0.5);
+            position: relative;
+            z-index: 1;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .step {
+            background: linear-gradient(135deg,
+                rgba(0, 0, 0, 0.5) 0%,
+                rgba(20, 20, 30, 0.4) 100%
+            );
+            padding: 25px;
+            border: 1px solid var(--chrome-5);
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .step:hover {
+            border-color: var(--neon-cyan);
+            box-shadow:
+                0 0 30px rgba(0, 255, 255, 0.2),
+                inset 0 0 20px rgba(0, 255, 255, 0.05);
+            transform: translateY(-3px);
+        }
+
+        .step-number {
+            font-family: 'Audiowide', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 900;
+            background: linear-gradient(180deg,
+                var(--neon-cyan),
+                var(--neon-pink)
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+            margin-bottom: 15px;
+        }
+
+        .step h3 {
+            color: var(--chrome-1);
+            font-size: 1rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .step p {
+            font-size: 0.9rem;
+            color: var(--chrome-4);
+        }
+
+        /* FOOTER - CHROME */
+        .footer {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(180deg,
+                rgba(0, 255, 255, 0.05) 0%,
+                rgba(255, 0, 255, 0.03) 100%
+            );
+            border: 1px solid var(--chrome-5);
+            border-top: 2px solid var(--neon-cyan);
+            margin-top: 30px;
+            box-shadow:
+                0 -20px 60px rgba(0, 255, 255, 0.1),
+                inset 0 0 50px rgba(0, 255, 255, 0.03);
+        }
+
+        .footer-text {
+            font-family: 'Audiowide', 'Orbitron', sans-serif;
+            color: var(--chrome-1);
+            font-size: 1.3rem;
+            letter-spacing: 6px;
+            text-shadow:
+                0 0 20px rgba(255, 255, 255, 0.3),
+                0 0 40px rgba(0, 255, 255, 0.2);
+        }
+
+        .footer-sub {
+            color: var(--neon-cyan);
+            font-size: 0.95rem;
+            margin-top: 15px;
+            letter-spacing: 4px;
+            text-shadow: 0 0 10px var(--neon-cyan);
+        }
+
+        /* SCROLLBAR - Y2K */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--space-black);
+            border: 1px solid var(--chrome-5);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg,
+                var(--neon-cyan),
+                var(--neon-pink)
+            );
+            border: 1px solid var(--chrome-3);
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+        }
+
+        /* LISTS */
+        ol, ul {
+            margin-left: 25px;
+            margin-top: 12px;
+        }
+
+        ol li, ul li {
+            margin-bottom: 10px;
+            color: var(--chrome-3);
+        }
+
+        ol li strong, ul li strong {
+            color: var(--chrome-1);
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+        }
+
+        /* CODE */
+        code {
+            background: rgba(0, 255, 65, 0.1);
+            color: var(--matrix);
+            padding: 3px 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            text-shadow: 0 0 5px var(--matrix);
+            border: 1px solid var(--matrix-dim);
+        }
+
+        /* PRINT MEDIA QUERIES - PDF PAGINATION */
+        @media print {
+            body {
+                background: white !important;
+            }
+            
+            .header {
+                page-break-after: always;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .quick-start {
+                page-break-after: always;
+            }
+            
+            .section {
+                page-break-before: always;
+                page-break-inside: avoid;
+            }
+            
+            .section:first-of-type {
+                page-break-before: auto;
+            }
+            
+            .footer {
+                page-break-before: always;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .setting-card {
+                page-break-inside: avoid;
+            }
+            
+            body::before, body::after {
+                display: none !important;
+            }
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+                letter-spacing: 4px;
+            }
+            .section-content {
+                padding: 20px;
+            }
+            .setting-card {
+                padding: 18px;
+            }
+            .steps {
+                grid-template-columns: 1fr;
+            }
+            .quick-start {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header-content">
+                <h1>◆ THE GODFATHER ◆</h1>
+                <div class="subtitle">M1 SCALPER // SETTINGS MANUAL</div>
+                <div class="version-badge">VER 1.00</div>
+            </div>
+        </header>
+
+        <!-- QUICK START -->
+        <div class="quick-start">
+            <h2>◆ QUICK START GUIDE ◆</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <h3>ALLOW WEBREQUEST</h3>
+                    <p>Enable license validation in MT5 Tools → Options</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <h3>ATTACH TO M1 CHART</h3>
+                    <p>Attach EA to M1 chart (US30, NAS100 recommended). <strong>MUST stay on M1 timeframe!</strong></p>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <h3>SET SESSIONS</h3>
+                    <p>Configure session times to match broker server</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <h3>RISK SETTINGS</h3>
+                    <p>Set PositionSizingType, FixedUsdRisk, RRMultiple</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">05</div>
+                    <h3>ENABLE STRATEGY</h3>
+                    <p>Turn ON UseFirstCandle15, configure entry mode</p>
+                </div>
+            </div>
+
+            <div class="setting-card important" style="margin-top: 35px; position: relative; z-index: 1;">
+                <h3>⚠ CRITICAL: License Validation Setup</h3>
+                <p>The Godfather EA uses license validation. You MUST add this URL to MT5's WebRequest allowed list:</p>
+
+                <div class="url-box" style="background: rgba(0, 255, 65, 0.08); border: 1px solid var(--matrix); padding: 15px; margin: 15px 0; font-family: 'Courier New', monospace; color: var(--matrix); text-shadow: 0 0 5px var(--matrix); word-break: break-all; text-align: center; font-size: 0.9rem;">
+                    https://greystyle-license-api.greystylefx.workers.dev
+                </div>
+
+                <div class="example" style="margin-top: 15px;">
+                    <div class="example-label">Setup Steps</div>
+                    <ol>
+                        <li>Open MetaTrader 5</li>
+                        <li>Click <strong>Tools</strong> → <strong>Options</strong> (Ctrl+O)</li>
+                        <li>Click <strong>Expert Advisors</strong> tab</li>
+                        <li>Check <strong>"Allow WebRequest for listed URL"</strong></li>
+                        <li>Click <strong>Add new URL</strong></li>
+                        <li>Copy and paste the URL above</li>
+                        <li>Click <strong>OK</strong> to save</li>
+                    </ol>
+                </div>
+
+                <div class="warning-box" style="margin-top: 15px;">
+                    Without this URL in your WebRequest list, the EA will show "License server error" and fail to start. This is required for license validation.
+                </div>
+            </div>
+        </div>
+
+        <!-- TIMEZONE SECTION -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">⏰</span>
+                <h2>Timezone & Execution Times</h2>
+            </div>
+            <div class="section-content">
+
+                <div class="setting-card important">
+                    <h3>
+                        ServerUtcOffsetHours
+                        <span class="setting-type">Number</span>
+                        <span class="default-value">Default: 0</span>
+                    </h3>
+                    <p>Tells the EA your broker's timezone. <strong>0 = auto-detect</strong> (recommended). Only change if auto-detect fails.</p>
+                    <div class="example">
+                        <div class="example-label">Example</div>
+                        If your broker is GMT+2, you could set this to 2. But honestly? Just leave it at 0 and let the EA figure it out.
+                    </div>
+                </div>
+
+                <div class="setting-card important">
+                    <h3>
+                        RegularSession
+                        <span class="setting-type">Text</span>
+                        <span class="default-value">Default: "1630-2300"</span>
+                    </h3>
+                    <p>The <strong>main trading hours</strong> (regular market session). Format is "HHMM-HHMM" using <strong>broker server time</strong>.</p>
+                    <div class="example">
+                        <div class="example-label">Example</div>
+                        "1630-2300" = 4:30 PM to 11:00 PM broker time. For NYSE (9:30 AM - 4:00 PM EST), convert to your broker's timezone.
+                    </div>
+                    <div class="pro-tip">
+                        Enable "ShowSessionDebug = true" temporarily to see exactly when the EA thinks sessions start/end.
+                    </div>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        PreMarketSession
+                        <span class="setting-type">Text</span>
+                        <span class="default-value">Default: "1100-1630"</span>
+                    </h3>
+                    <p>Pre-market hours. Only used if <strong>UsePreMarket = true</strong>. Same format as RegularSession.</p>
+                </div>
+
+                <div class="setting-card important">
+                    <h3>
+                        TradeWindowSession
+                        <span class="setting-type">Text</span>
+                        <span class="default-value">Default: "1630-1800"</span>
+                    </h3>
+                    <p>The <strong>ONLY time the EA enters trades</strong>! Your "sweet spot" window. Default is first 90 minutes (highest volatility).</p>
+                    <div class="example">
+                        <div class="example-label">Example</div>
+                        "1630-1800" captures NY open (9:30-11:00 AM EST) if broker is GMT+5.
+                    </div>
+                    <div class="pro-tip">
+                        Best entry window is typically first 60-90 minutes after market open. That's when the big moves happen!
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- STRATEGY SETTINGS -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">⚙️</span>
+                <h2>Strategy Settings</h2>
+            </div>
+            <div class="section-content">
+
+                <div class="setting-card important">
+                    <h3>
+                        LogicTimeframe
+                        <span class="setting-type">Dropdown</span>
+                        <span class="default-value">Default: PERIOD_M1</span>
+                    </h3>
+                    <p><strong>KEEP THIS AT M1</strong> for the main "First Candle" strategy! Even on M5/M15 charts, EA calculates on M1 internally.</p>
+                    
+                    <div class="warning-box">
+                        CRITICAL: You MUST keep the chart on M1 timeframe! The EA uses M1 candle data for all calculations. If you switch the chart to M5/M15, the EA will NOT work correctly. LogicTimeframe = M1, but the actual chart timeframe must also be M1!
+                    </div>
+                    
+                    <div class="pro-tip">
+                        This keeps EA accurate to the Scarface transcript - always M1 candles for entries.
+                    </div>
+                </div>
+
+                <div class="setting-card important">
+                    <h3>
+                        UseFirstCandle15
+                        <span class="setting-type">True/False</span>
+                        <span class="default-value">Default: TRUE ✓</span>
+                    </h3>
+                    <p><strong>THE MAIN STRATEGY!</strong> Uses "First Candle" breakout from Scarface transcript:</p>
+                    <ol>
+                        <li>Captures first 15-minute candle after market open</li>
+                        <li>Waits for 5-minute candle CLOSE outside range</li>
+                        <li>Enters on M1 pullback/retest</li>
+                    </ol>
+                    <div class="pro-tip">
+                        Keep this ON for authentic Scarface approach!
+                    </div>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        UseOR5
+                        <span class="setting-type">True/False</span>
+                        <span class="default-value">Default: FALSE</span>
+                    </h3>
+                    <p>Alternative strategy using 5-minute opening range instead of 15 minutes. Test both to see what works for your market.</p>
+                    <div class="pro-tip">
+                        Some traders prefer tighter 5-minute range for quicker entries. Experiment!
+                    </div>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        UsePrevDay
+                        <span class="setting-type">True/False</span>
+                        <span class="default-value">Default: FALSE</span>
+                    </h3>
+                    <p>Trades breakouts of <strong>previous day's high/low</strong>. Can use alongside First Candle, but EA only takes ONE trade per day.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        UsePreMarket
+                        <span class="setting-type">True/False</span>
+                        <span class="default-value">Default: FALSE</span>
+                    </h3>
+                    <p>Uses pre-market session high/low. Only works if broker provides pre-market data (most index CFDs don't). Generally OFF.</p>
+                </div>
+
+                <div class="setting-card important">
+                    <h3>
+                        FirstCandleEntryMode
+                        <span class="setting-type">Dropdown</span>
+                        <span class="default-value">Default: Conservative</span>
+                    </h3>
+                    <p>How aggressive your entries:</p>
+                    <ul>
+                        <li><strong>Aggressive:</strong> Enters when price touches level (market order)</li>
+                        <li><strong>Conservative:</strong> Waits for touch + M1 close in your direction</li>
+                    </ul>
+                    <div class="pro-tip">
+                        Conservative recommended! Filters false breakouts. Aggressive = earlier entry but more fakeout risk.
+                    </div>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        RetestMaxBars
+                        <span class="setting-type">Number</span>
+                        <span class="default-value">Default: 10</span>
+                    </h3>
+                    <p>After breakout, EA waits this many bars for retest. Setup expires if no retest. Set <strong>0</strong> to never expire.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        TouchToleranceTicks
+                        <span class="setting-type">Number</span>
+                        <span class="default-value">Default: 1</span>
+                    </h3>
+                    <p>Ticks of "wiggle room" for retests. Default 1 tick = within 1 tick of level counts as "touch."</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        BreakConfirmTicks
+                        <span class="setting-type">Number</span>
+                        <span class="default-value">Default: 2</span>
+                    </h3>
+                    <p>Ticks beyond range high/low for breakout confirmation. Prevents fakeouts from barely poking through.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        RetestCloseTicks
+                        <span class="setting-type">Number</span>
+                        <span class="default-value">Default: 1</span>
+                    </h3>
+                    <p>In Conservative mode, price must close this many ticks back inside range after touching.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        StopBufferTicks
+                        <span class="setting-type">Number</span>
+                        <span class="default-value">Default: 2</span>
+                    </h3>
+                    <p>Extra buffer for stop loss. Protects against wicks barely poking your stop.</p>
+                </div>
+
+                <div class="setting-card important">
+                    <h3>
+                        RRMultiple
+                        <span class="setting-type">Number</span>
+                        <span class="default-value">Default: 2.0</span>
+                    </h3>
+                    <p>Your <strong>Risk:Reward ratio</strong>. 2.0 = targeting 2x your risk. Stop 10 points → Target 20 points.</p>
+                    <div class="example">
+                        <div class="example-label">Example</div>
+                        Stop Loss: 20 points → Take Profit: 40 points (2x) with RRMultiple = 2.0
+                    </div>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        MaxTradesPerDay
+                        <span class="setting-type">Number</span>
+                        <span class="default-value">Default: 1</span>
+                    </h3>
+                    <p>Maximum trades per day. Scarface style = ONE quality trade. Higher = multiple setups, but watch for overtrading.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        TradeDirection
+                        <span class="setting-type">Dropdown</span>
+                        <span class="default-value">Default: Both</span>
+                    </h3>
+                    <p>Filter trade direction:</p>
+                    <ul>
+                        <li><strong>Both:</strong> Long and short setups</li>
+                        <li><strong>Longs Only:</strong> Only buys (bullish bias)</li>
+                        <li><strong>Shorts Only:</strong> Only sells (bearish bias)</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- RISK MANAGEMENT -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">💰</span>
+                <h2>Risk Management</h2>
+            </div>
+            <div class="section-content">
+
+                <div class="setting-card important">
+                    <h3>
+                        PositionSizingType
+                        <span class="setting-type">Dropdown</span>
+                        <span class="default-value">Default: Fixed USD Risk</span>
+                    </h3>
+                    <p>How EA calculates position size:</p>
+                    <ul>
+                        <li><strong>Fixed Contracts:</strong> Always X lots</li>
+                        <li><strong>Fixed USD Risk:</strong> Risks $X per trade - RECOMMENDED</li>
+                        <li><strong>Balance % Risk:</strong> Risks X% of account per trade</li>
+                    </ul>
+                    <div class="pro-tip">
+                        Fixed USD Risk is best! You know exactly how much you can lose each trade.
+                    </div>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        FixedContracts
+                        <span class="setting-type">Number</span>
+                        <span class="default-value">Default: 1.0</span>
+                    </h3>
+                    <p>Only for "Fixed Contracts" mode. EA always trades this many lots.</p>
+                </div>
+
+                <div class="setting-card important">
+                    <h3>
+                        FixedUsdRisk
+                        <span class="setting-type">Number</span>
+                        <span class="default-value">Default: 100.0</span>
+                    </h3>
+                    <p>Only for "Fixed USD Risk" mode. EA calculates lot size so you lose exactly this if stop is hit.</p>
+                    <div class="example">
+                        <div class="example-label">Example</div>
+                        FixedUsdRisk = $100, Stop = 20 points → EA sizes so 20 points = $100 loss
+                    </div>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        RiskPercent
+                        <span class="setting-type">Number</span>
+                        <span class="default-value">Default: 1.0</span>
+                    </h3>
+                    <p>Only for "Balance % Risk" mode. Risks this % of account per trade. Compounds as account grows.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        TickValue
+                        <span class="setting-type">Number</span>
+                        <span class="default-value">Default: 5.0</span>
+                    </h3>
+                    <p>Fallback if broker doesn't report tick values. Usually auto-detected.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        MinCalculatedVolume / MaxCalculatedVolume
+                        <span class="setting-type">Number</span>
+                        <span class="default-value">Default: 0.0 (off)</span>
+                    </h3>
+                    <p>Optional caps. Min = smallest lot size. Max = largest lot size. 0 = disabled.</p>
+                </div>
+
+                <div class="setting-card important">
+                    <h3>
+                        SLType (Stop Loss Type)
+                        <span class="setting-type">Dropdown</span>
+                        <span class="default-value">Default: Retest Candle</span>
+                    </h3>
+                    <p>Where to place stop loss:</p>
+                    <ul>
+                        <li><strong>Retest Candle:</strong> Below/above retest candle (SCARFACE METHOD)</li>
+                        <li><strong>Range %:</strong> X% of opening range from entry</li>
+                        <li><strong>ATR Multiple:</strong> X × ATR from entry</li>
+                        <li><strong>Fixed %:</strong> X% of price from entry</li>
+                        <li><strong>Fixed Points:</strong> Fixed ticks away</li>
+                        <li><strong>Opposite Range:</strong> At opposite side of opening range</li>
+                    </ul>
+                    <div class="pro-tip">
+                        Retest Candle = Scarface method! Tight stops at retest candle low/high for max R:R.
+                    </div>
+                    <div class="warning-box">
+                        If using trailing stops (UseTrailingStop = TRUE) or Supertrend, your actual loss may EXCEED FixedUsdRisk! EA sizes based on INITIAL stop, but trailing methods can move stop further from entry. Example: Supertrend moves stop 50 points away but you sized for 15 points = 2.5x planned risk!
+                    </div>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        SLValue
+                        <span class="setting-type">Number</span>
+                        <span class="default-value">Default: 35.0</span>
+                    </h3>
+                    <p>Value for Range %, ATR Multiple, Fixed %, or Fixed Points modes. Ignored for Retest Candle.</p>
+                </div>
+
+                <div class="setting-card important">
+                    <h3>
+                        TPType (Take Profit Type)
+                        <span class="setting-type">Dropdown</span>
+                        <span class="default-value">Default: Scarface</span>
+                    </h3>
+                    <p>How to calculate take profit:</p>
+                    <ul>
+                        <li><strong>Scarface:</strong> Uses HOD/LOD, pivot levels, psychological numbers (SMARTEST)</li>
+                        <li><strong>Risk Reward:</strong> Simple R:R multiple</li>
+                        <li><strong>Range %:</strong> X% of opening range</li>
+                        <li><strong>ATR Multiple:</strong> X × ATR from entry</li>
+                        <li><strong>Fixed %:</strong> X% of price from entry</li>
+                        <li><strong>Fixed Points:</strong> Fixed points</li>
+                    </ul>
+                    <div class="pro-tip">
+                        Scarface mode finds natural targets (previous highs/lows, round numbers) at least your minimum R:R away!
+                    </div>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        TPValue
+                        <span class="setting-type">Number</span>
+                        <span class="default-value">Default: 2.0</span>
+                    </h3>
+                    <p>Value for Range %, ATR Multiple, Fixed %, Fixed Points modes. Ignored in Scarface mode (uses RRMultiple as minimum).</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        SLTP_ATR_Length
+                        <span class="setting-type">Number</span>
+                        <span class="default-value">Default: 19</span>
+                    </h3>
+                    <p>ATR lookback period for ATR-based stops/targets. 19 is common for intraday.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        UseHighLowOfDayTarget
+                        <span class="setting-type">True/False</span>
+                        <span class="default-value">Default: TRUE ✓</span>
+                    </h3>
+                    <p>In Scarface mode, target previous High of Day (longs) or Low of Day (shorts) if at least minimum R:R away.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        UsePivotTargets
+                        <span class="setting-type">True/False</span>
+                        <span class="default-value">Default: FALSE</span>
+                    </h3>
+                    <p>In Scarface mode, consider daily pivot points (PP, R1-R3, S1-S3) as targets.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        UsePsychologicalTargets
+                        <span class="setting-type">True/False</span>
+                        <span class="default-value">Default: TRUE ✓</span>
+                    </h3>
+                    <p>In Scarface mode, round to "clean" price levels (335, 340, 345). Markets love round numbers!</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        PsychStep / PsychStepAuto
+                        <span class="setting-type">Number / True-False</span>
+                        <span class="default-value">Default: 1.0 / TRUE</span>
+                    </h3>
+                    <p>Controls psychological rounding. PsychStepAuto = TRUE lets EA auto-detect step size.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        ConfirmClosePercent
+                        <span class="setting-type">Number</span>
+                        <span class="default-value">Default: 65.0</span>
+                    </h3>
+                    <p>For Scarface mode. Retest candle must close in top X% of range (longs) to qualify. Filters weak retests. Recommended: 65-70 for indices.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        MinWickTicks
+                        <span class="setting-type">Number</span>
+                        <span class="default-value">Default: 0</span>
+                    </h3>
+                    <p>Minimum wick size (ticks) on retest candle. 0 = disabled. Helps filter doji/small candles.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        UseCandleCloseStop
+                        <span class="setting-type">True/False</span>
+                        <span class="default-value">Default: TRUE ✓</span>
+                    </h3>
+                    <p>If TRUE, EA closes position if price closes beyond conceptual stop (even if broker stop not hit).</p>
+                    <div class="warning-box">
+                        With trailing stops or Supertrend, candle close stops may trigger at worse price than initial stop, resulting in larger losses than FixedUsdRisk. Position sizing uses INITIAL stop, but trailing methods widen effective stop.
+                    </div>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        MinStopDistanceTicks
+                        <span class="setting-type">Number</span>
+                        <span class="default-value">Default: 15</span>
+                    </h3>
+                    <p>Minimum stop distance (ticks). Trade rejected if calculated stop closer. Prevents tiny stops on volatile moves.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        StopManagementMode
+                        <span class="setting-type">Dropdown</span>
+                        <span class="default-value">Default: Fixed SL/TP</span>
+                    </h3>
+                    <p>How EA manages stops after entry:</p>
+                    <ul>
+                        <li><strong>Fixed SL/TP:</strong> Stops don't move (SCARFACE DEFAULT)</li>
+                        <li><strong>Candle Close:</strong> Uses candle-close invalidation</li>
+                        <li><strong>Supertrend:</strong> Uses Supertrend to trail (requires UseSupertrend = true)</li>
+                    </ul>
+                    <div class="warning-box">
+                        Supertrend mode can cause losses LARGER than FixedUsdRisk! EA sizes based on INITIAL Supertrend value, but Supertrend moves with price. If Supertrend moves 40 points away but you sized for 15 points, you could lose 2-3x planned risk!
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TRAILING STOP -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">📈</span>
+                <h2>Trailing Stop</h2>
+            </div>
+            <div class="section-content">
+
+                <div class="setting-card warning">
+                    <h3>
+                        UseTrailingStop
+                        <span class="setting-type">True/False</span>
+                        <span class="default-value">Default: FALSE</span>
+                    </h3>
+                    <p><strong>MASTER SWITCH!</strong> When FALSE, stops stay fixed. When TRUE, stops trail using chosen method. Scarface didn't use trailing stops - he held to target.</p>
+                    <div class="warning-box">
+                        IMPORTANT: Trailing stops can cause losses EXCEEDING FixedUsdRisk! Position sized based on INITIAL stop at entry. As trailing stop moves, distance from entry to stop can INCREASE. Example: FixedUsdRisk = $100 with 20-tick stop. If trailing moves stop to 50 ticks away and price reverses, you lose $250 instead of $100!
+                    </div>
+                    <div class="pro-tip">
+                        Default is OFF because Scarface style holds to target. Only enable if you want to lock in profits as price moves!
+                    </div>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        TrailingStopType
+                        <span class="setting-type">Dropdown</span>
+                        <span class="default-value">Default: ATR</span>
+                    </h3>
+                    <p>If UseTrailingStop = TRUE:</p>
+                    <ul>
+                        <li><strong>ATR:</strong> Trails by X × ATR behind price</li>
+                        <li><strong>Chandelier Exit:</strong> Uses Chandelier Exit formula</li>
+                    </ul>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        TrailingATR_Length / TrailingATR_Multiplier
+                        <span class="setting-type">Number / Number</span>
+                        <span class="default-value">Default: 16 / 3.0</span>
+                    </h3>
+                    <p>For ATR trailing: ATR period and multiplier. Higher multiplier = wider trail (stops less often but gives back more profit).</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        TrailingMinStopDistanceTicks
+                        <span class="setting-type">Number</span>
+                        <span class="default-value">Default: 15</span>
+                    </h3>
+                    <p>Minimum distance trailing stop must stay from entry. Prevents stops getting too tight.</p>
+                    <div class="warning-box">
+                        Even with this minimum, trailing stops can still end up further from entry than initial stop! This only prevents stop being TOO CLOSE, not too far. Risk can still exceed FixedUsdRisk if price moves significantly before trailing stop adjusts.
+                    </div>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        Chandelier Exit Settings
+                        <span class="setting-type">Group</span>
+                    </h3>
+                    <p>Settings for Chandelier Exit trailing:</p>
+                    <ul>
+                        <li><strong>CE_AtrPeriod:</strong> ATR lookback (default: 34)</li>
+                        <li><strong>CE_AtrMultiplier1:</strong> Primary level (default: 9.0)</li>
+                        <li><strong>CE_AtrMultiplier2:</strong> Secondary level (default: 19.5)</li>
+                        <li><strong>CE_LookBackPeriod:</strong> High/low lookback (default: 22)</li>
+                        <li><strong>CE_UsePrimaryLevel:</strong> Use 9× (TRUE) or 19.5× (FALSE) multiplier</li>
+                        <li><strong>CE_DrawOnChart:</strong> Show Chandelier lines visually</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SUPER TREND -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">📊</span>
+                <h2>Supertrend Settings</h2>
+            </div>
+            <div class="section-content">
+
+                <div class="setting-card warning">
+                    <h3>
+                        UseSupertrend
+                        <span class="setting-type">True/False</span>
+                        <span class="default-value">Default: FALSE</span>
+                    </h3>
+                    <p>Enables Supertrend indicator for stop management. Only works if StopManagementMode = "Supertrend." Advanced feature - most users should leave OFF.</p>
+                    <div class="warning-box">
+                        CRITICAL: Supertrend can cause losses MUCH LARGER than FixedUsdRisk! Here's why: EA calculates position size based on Supertrend value AT ENTRY. But Supertrend is dynamic - it moves as price moves. If price trends strongly, Supertrend can end up 40-60+ points from entry, while you sized for only 15-20 points. If price reverses to hit Supertrend line, you could lose 2-4x planned risk. Example: FixedUsdRisk = $100, initial Supertrend at 15 points away. Price trends, Supertrend moves to 45 points away. Reversal hits Supertrend = you lose $300. Use extreme caution!
+                    </div>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        ST_ATR_Length / ST_Multiplier
+                        <span class="setting-type">Number / Number</span>
+                        <span class="default-value">Default: 10 / 3.0</span>
+                    </h3>
+                    <p>Supertrend ATR period and multiplier. Formula: (High+Low)/2 ± (Multiplier × ATR)</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        ST_BufferTicks
+                        <span class="setting-type">Number</span>
+                        <span class="default-value">Default: 0</span>
+                    </h3>
+                    <p>Extra buffer beyond Supertrend line for stops.</p>
+                    <div class="warning-box">
+                        Adding buffer makes stop even FURTHER from entry, increasing potential loss beyond FixedUsdRisk!
+                    </div>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        ST_UpdateOnNewBarOnly
+                        <span class="setting-type">True/False</span>
+                        <span class="default-value">Default: TRUE ✓</span>
+                    </h3>
+                    <p>Only update Supertrend on new bars (prevents repainting/mid-bar changes). Recommended TRUE.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        ST_DrawOnChart
+                        <span class="setting-type">True/False</span>
+                        <span class="default-value">Default: TRUE ✓</span>
+                    </h3>
+                    <p>Visually draw Supertrend line on chart to see where stops are.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SAFETY SETTINGS -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">🛡️</span>
+                <h2>Safety & Emergency Settings</h2>
+            </div>
+            <div class="section-content">
+
+                <div class="setting-card">
+                    <h3>
+                        UseEmergencyBrokerSL
+                        <span class="setting-type">True/False</span>
+                        <span class="default-value">Default: TRUE ✓</span>
+                    </h3>
+                    <p>With Candle Close stop mode, places wide "emergency" stop with broker. Prevents unlimited losses on disconnect/gap.</p>
+                    <div class="warning-box">
+                        Emergency stops placed WIDE (EmergencySL_ATR_Multiple × ATR from conceptual stop). Much further than initial stop! If emergency stop hits (rare, but can happen in extreme volatility), loss will be SIGNIFICANTLY larger than FixedUsdRisk.
+                    </div>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        EmergencySL_ATR_Multiple
+                        <span class="setting-type">Number</span>
+                        <span class="default-value">Default: 3.0</span>
+                    </h3>
+                    <p>How far emergency stop is placed (3 × ATR from conceptual stop). Wide enough to not get hit by normal wicks.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        EnableEODClose
+                        <span class="setting-type">True/False</span>
+                        <span class="default-value">Default: FALSE</span>
+                    </h3>
+                    <p>If TRUE, closes all positions when regular session ends. Good for avoiding overnight exposure.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        CloseAtTradeWindowEnd
+                        <span class="setting-type">True/False</span>
+                        <span class="default-value">Default: TRUE ✓</span>
+                    </h3>
+                    <p>If TRUE, closes open positions when TradeWindowSession ends. Ensures you don't hold past optimal entry window.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- DAYS & MONTHS -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">📅</span>
+                <h2>Days & Months Filters</h2>
+            </div>
+            <div class="section-content">
+
+                <div class="setting-card">
+                    <h3>
+                        TradeMonday - TradeSunday
+                        <span class="setting-type">True/False (each)</span>
+                        <span class="default-value">Default: T/T/T/F/T/T/T</span>
+                    </h3>
+                    <p>Toggle which days EA trades. Default skips Thursday (often choppy). Adjust to preference.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        TradeJanuary - TradeDecember
+                        <span class="setting-type">True/False (each)</span>
+                        <span class="default-value">Default: All TRUE</span>
+                    </h3>
+                    <p>Toggle which months EA trades. Useful for avoiding historically bad months.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PROP FIRM -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">🏆</span>
+                <h2>Prop Firm Settings</h2>
+            </div>
+            <div class="section-content">
+
+                <div class="setting-card warning">
+                    <h3>
+                        UseAutomatedRiskManagement
+                        <span class="setting-type">True/False</span>
+                        <span class="default-value">Default: FALSE</span>
+                    </h3>
+                    <p><strong>PROP FIRM MODE!</strong> When enabled, EA monitors account against prop firm rules and STOPS trading if limits hit. Essential for FTMO, MyForexFunds, etc.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        MaxDailyDD
+                        <span class="setting-type">Number ($)</span>
+                        <span class="default-value">Default: 2000.0</span>
+                    </h3>
+                    <p>Maximum daily drawdown ($). EA stops trading for day if reached.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        MinimumBalance
+                        <span class="setting-type">Number ($)</span>
+                        <span class="default-value">Default: 7500.0</span>
+                    </h3>
+                    <p>Minimum account balance floor. EA stops trading if equity drops to this level.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        TargetBalance
+                        <span class="setting-type">Number ($)</span>
+                        <span class="default-value">Default: 12500.0</span>
+                    </h3>
+                    <p>Profit target. EA stops trading when reached (protects gains!).</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        EquitySL
+                        <span class="setting-type">Number ($)</span>
+                        <span class="default-value">Default: 500.0</span>
+                    </h3>
+                    <p>Maximum total loss from starting balance. Circuit breaker for account.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ALERTS -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">🔔</span>
+                <h2>Alerts & Notifications</h2>
+            </div>
+            <div class="section-content">
+
+                <div class="setting-card">
+                    <h3>
+                        EnablePopupAlerts
+                        <span class="setting-type">True/False</span>
+                        <span class="default-value">Default: TRUE ✓</span>
+                    </h3>
+                    <p>Show popup alerts in MT5 when trades entered. Good for monitoring at computer.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        EnablePushAlerts
+                        <span class="setting-type">True/False</span>
+                        <span class="default-value">Default: FALSE</span>
+                    </h3>
+                    <p>Send notifications to phone via MT5 mobile app. Must set up MT5 notifications.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        EnableEmailAlerts
+                        <span class="setting-type">True/False</span>
+                        <span class="default-value">Default: FALSE</span>
+                    </h3>
+                    <p>Send email alerts when trades taken. Must configure SMTP in MT5 first.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        ShowSessionDebug
+                        <span class="setting-type">True/False</span>
+                        <span class="default-value">Default: FALSE</span>
+                    </h3>
+                    <p>Prints debug to Experts tab showing session start/end. Useful for setting up times!</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        ShowEntryGateDebug
+                        <span class="setting-type">True/False</span>
+                        <span class="default-value">Default: FALSE</span>
+                    </h3>
+                    <p>Prints debug showing why trades blocked (filters, time, etc.). Helpful for troubleshooting!</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        ShowLongShortTool
+                        <span class="setting-type">True/False</span>
+                        <span class="default-value">Default: TRUE ✓</span>
+                    </h3>
+                    <p>Shows Risk/Reward visualization on chart. Green box = reward, Red box = risk.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- VISUALIZATION -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">👁️</span>
+                <h2>Visualization Settings</h2>
+            </div>
+            <div class="section-content">
+
+                <div class="setting-card">
+                    <h3>
+                        ShowSessionLines
+                        <span class="setting-type">True/False</span>
+                        <span class="default-value">Default: TRUE ✓</span>
+                    </h3>
+                    <p>Draws vertical lines showing Trade Window start/end. Visualizes entry window.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        ShowTVStylePivots
+                        <span class="setting-type">True/False</span>
+                        <span class="default-value">Default: FALSE</span>
+                    </h3>
+                    <p>Shows pivot level lines (PP, R1-R3, S1-S3) on chart. Only if UsePivotTargets enabled.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        LabelPosition / LabelOffsetBars
+                        <span class="setting-type">Dropdown / Number</span>
+                        <span class="default-value">Default: Right / 5</span>
+                    </h3>
+                    <p>Where text labels appear. Position = Left/Right. Offset = bars to shift labels.</p>
+                </div>
+
+                <div class="setting-card">
+                    <h3>
+                        RiskColor / RewardColor / EntryLineColor
+                        <span class="setting-type">Color</span>
+                    </h3>
+                    <p>Customize risk/reward box colors. Default: Red (risk), Green (reward), White (entry).</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-text">GREYSTYLE TRADING</div>
+            <div class="footer-sub">THE GODFATHER M1 SCALPER v1.00</div>
+        </footer>
+
+    </div>
+</body>
+</html>
